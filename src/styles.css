@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+	padding: 50px; 
+	background-color: #f2f2f2; 
+}
+table {
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+.table {
+	background-color: #ffffff;
+}
+.table td {	
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    vertical-align: inherit;
+    white-space: nowrap;
+ }
+/*td{
+     width:20%;
+     float:left;
+     word-wrap:break-word;
+}*/
+.f_border {
+	border-left: 1px solid #ddd;
+}
+.l_border {
+	border-right: 1px solid #ddd;
+}
+
+.shorten {
+	max-width: 75%;
+	white-space: nowrap;
+	overflow: hidden;         
+	text-overflow: ellipsis;
+}

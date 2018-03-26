@@ -1,0 +1,19 @@
+<div class="container">
+	<h4>Message Detail</h4>
+		<a routerLink="/inbox">Back</a>
+		<div class="table-responsive">
+			<table class="table">
+				<tbody>
+					<tr>
+						<td class="f_border" style="width:7%"><ngx-avatar  name="{{message.from}}" value="28%" bgColor="#ff9900" fgColor="#ffffff" size="40" textSizeRatio="2.5" [round]="true"></ngx-avatar></td>
+						<td style="width:28%"><div class="shorten">{{message.from}}</div></td>
+						<td style="width:50%"><div class="shorten">{{message.subject}}</div></td>
+						<td class="l_border" style="width:15%">{{message.date | date:"MM/dd/yy, h:mm a" }}</td>
+					</tr>
+					<tr>
+						<td colspan="4" class="f_border l_border"><pre>{{message.text}}</pre></td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+</div>

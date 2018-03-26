@@ -1,0 +1,15 @@
+<div class="container">
+	<h4>Inbox</h4>
+	<div class="table-responsive">
+		<table class="table table-hover">
+			<tbody>
+				<tr *ngFor="let msg of messages" routerLink="/message/{{msg.id}}">
+					<td class="f_border" style="width:7%"><ngx-avatar  name="{{msg.from}}" value="28%" bgColor="#ff9900" fgColor="#ffffff" size="40" textSizeRatio="2.5" [round]="true"></ngx-avatar></td>
+					<td style="width:28%"><div class="shorten">{{msg.from}}</div></td>
+					<td style="width:50%"><div class="shorten">{{msg.subject}}</div></td>
+					<td class="l_border" style="width:15%">{{msg.date | date:"MM/dd/yy, h:mm a" }}</td>
+				</tr>	
+			</tbody>
+		</table>	
+	</div>
+</div>
